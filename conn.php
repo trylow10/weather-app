@@ -5,6 +5,21 @@ $username = "root";
 $password = "root";
 $database = "weatherApp";
 
+
+//create table using sql
+
+// CREATE TABLE WeatherData (
+//     id INT AUTO_INCREMENT PRIMARY KEY,
+//     date DATE NOT NULL,
+//     city VARCHAR(255) NOT NULL,
+//     temp DECIMAL(10,2) NOT NULL,
+//     humidity DECIMAL(5,2) NOT NULL,
+//     wind_speed DECIMAL(10,2) NOT NULL,
+//     weather_description VARCHAR(255) NOT NULL
+//     icon_url VARCHAR(255) NOT NULL
+// );
+
+
 // Create a new database connection
 $conn = new mysqli($host, $username, $password, $database);
 
@@ -12,17 +27,6 @@ $conn = new mysqli($host, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-// Create the table if it does not exist
-// $sql =
-//  "CREATE TABLE IF NOT EXISTS WeatherData (
-//     Date DATE,
-//     City VARCHAR(30),
-//     Humidity INT(5,2),
-//     Wind_Speed FLOAT,
-//     Weather_description VARCHAR(50)
-// )"
-// ;
 
 if (!$conn) {
 echo "Error creating table: " . $conn->error;

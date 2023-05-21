@@ -2,12 +2,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: #222;
+  background: whitesmoke;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
   font-size: 120%;
+}
+
+.button-container {
+  margin-bottom: 1em;
 }
 
 .card {
@@ -17,7 +22,7 @@ body {
   border-radius: 30px;
   width: 100%;
   max-width: 420px;
-  margin: 1em;
+  margin-right: inherit;
 }
 
 .search {
@@ -31,7 +36,6 @@ button {
   border-radius: 50%;
   border: none;
   height: 44px;
-  width: 44px;
   outline: none;
   background: #7c7c7c2b;
   color: white;
@@ -89,4 +93,46 @@ h1.temp {
   background-color: #f2f2f2;
   color: #333;
   font-weight: bold;
+  column-span: 2px;
+  row-gap: 4px;
+}
+th.table-header:nth-child(1) {
+  width: 200px; /* Adjust the width for the first column */
+}
+
+th.table-header:nth-child(5) {
+  width: 300px; /* Adjust the width for the second column */
+}
+
+
+.view-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.view-button:hover {
+  background-color: #45a049;
+}
+
+.view-button:active {
+  background-color: #3e8e41;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+td{
+  text-align: center;
+
 }

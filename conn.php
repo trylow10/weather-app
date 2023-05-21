@@ -6,6 +6,10 @@ $password = "root";
 $database = "weatherApp";
 
 
+//create database
+
+// CREATE DATABASE weatherApp;
+
 //create table using sql
 
 // CREATE TABLE WeatherData (
@@ -15,7 +19,7 @@ $database = "weatherApp";
 //     temp DECIMAL(10,2) NOT NULL,
 //     humidity DECIMAL(5,2) NOT NULL,
 //     wind_speed DECIMAL(10,2) NOT NULL,
-//     weather_description VARCHAR(255) NOT NULL
+//     weather_description VARCHAR(255) NOT NULL,
 //     icon_url VARCHAR(255) NOT NULL
 // );
 
